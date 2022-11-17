@@ -18,7 +18,12 @@ const Search = (props) => {
     }
 
     return ( 
-        <div>Hello, {props.UN}</div> 
+        <div>
+            <p>
+                <strong>Welcome, {props.UN}</strong><br></br>
+                Hope you are doing well!
+            </p>
+        </div> 
     );
 }
  
