@@ -15,7 +15,7 @@ const Search = (props) => {
             <div>
                 <input type={"text"} className={"search"} placeholder={"Search.."} onChange={e => setQuery(e.target.value)}></input>
                 <table>
-                    {Books[0].items.filter(book => book.volumeInfo.title.toLowerCase().includes().map(book => (
+                    {Books[0].items.filter(book => book.volumeInfo.title.toLowerCase().includes(query.toLowerCase())).map(book => (
                         <tr>
                             <td>
                             {book.volumeInfo.imageLinks ? <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title} /> : <img src={"https://via.placeholder.com/150"} alt={book.volumeInfo.title} />}
