@@ -19,8 +19,8 @@ const Search = (props) => {
                 <table className='mx-3 mt-3'>
                     {Books[0].items.filter(book => book.volumeInfo.title.toLowerCase().includes(query.toLowerCase())).map(book => (
                         <tr>
-                            <td className='pt-2'>
-                                {book.volumeInfo.imageLinks ? <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title} /> : <img src={"https://via.placeholder.com/150"} alt={book.volumeInfo.title} />}
+                            <td>
+                            {book.volumeInfo.imageLinks ? <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title} /> : <img src={"https://via.placeholder.com/150"} alt={book.volumeInfo.title} />}
                             </td>
                             <td className='text-center'><strong>{book.volumeInfo.title}</strong></td>
                             <td className='text-center'>{book.volumeInfo.publishedDate}</td>
