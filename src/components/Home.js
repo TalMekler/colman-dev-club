@@ -35,9 +35,9 @@ function Home(props) {
             <h1>Home Page</h1>
             <form>
                 <label for="userName">User Name: </label>
-                <input id="userName" name="userName" placeholder="Enter your user name"></input>
+                <input className="mx-2" id="userName" name="userName" placeholder="Enter your user name"></input>
                 {/* <input type={"submit"} value={"Submit"}></input> */}
-                <button onClick={handleSubmit}>Submit</button>
+                <button type="submit" className="btn btn-primary mx-1 mb-1" onClick={handleSubmit}>Submit</button>
             </form>
         </div> 
     )
