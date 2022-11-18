@@ -5,7 +5,8 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const body = document.body;
-body.style.backgroundColor = "darkgray";
+// body.style.backgroundColor = "darkgray";
+body.classList.add("bg-dark");
 root.render(
   <React.StrictMode>
     <App />

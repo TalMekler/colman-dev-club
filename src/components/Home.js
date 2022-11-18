@@ -34,10 +34,10 @@ function Home(props) {
         <div>
             <h1>Home Page</h1>
             <form>
-                <label for="userName">User Name: </label>
-                <input className="mx-2" id="userName" name="userName" placeholder="Enter your user name"></input>
+                <label className="text-light fw-bold fs-4" for="userName">User Name: </label>
+                <input className="mx-2 fs-4 text-dark" id="userName" name="userName" placeholder="Enter your user name"></input>
                 {/* <input type={"submit"} value={"Submit"}></input> */}
-                <button type="submit" className="btn btn-primary mx-1 mb-1" onClick={handleSubmit}>Submit</button>
+                <button type="submit" className="btn btn-lg btn-outline-light mx-1 mb-1" onClick={handleSubmit}>Submit</button>
             </form>
         </div> 
     )
