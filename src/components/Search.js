@@ -18,7 +18,7 @@ const Search = (props) => {
         },[])
     return (
         <div className='position-relative'>
-            <p className='mx-3'>
+            <p className='mx-3 text-white'>
                 <strong>Welcome, {props.UN}</strong><br></br>
                 Hope you are doing well! Which book would you like to buy today?
             </p>
